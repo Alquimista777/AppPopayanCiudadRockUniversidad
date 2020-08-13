@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>HTML5 Contact Form</title>
+    <link rel="stylesheet" type="text/css" href="Scss.css" >
+</head>
+<body align = "center">
+<div  style="background-color:#000000;border-bottom:solid 1px #4B7AC0;"><img src="Media/LogoWeb.jpg" height="474px" width="690px"></div>
+
+<form class="contact_form" action="" method="post"  >
+<ul>
+     
+  
+    <li>
+        <label for="name">Nombre:</label>
+        <input type="text" name="name" placeholder="usuario" />
+    <li>
+    <label for="email">Contraseña:</label>
+    <input type="password" name="password" placeholder="contraseña" />
+   
+    </li>
+    <li>
+    	<input  type=button class="submit" onClick="location.href='Formulario.html'" value='Crear cuenta'>
+
+    	   <input type="button" class="submit" value="Inisiar seseion" onclick="location.href='../PopayanCR.html'">
+
+    	<!--<button class="submit " >Iniciar sesion </button>           window.open('') 
+-->    </li>
+
+
+
+
+</ul>
+</form>
+<?php 
+$nombre=jose;
+$nombre=andres;
+$nombre=santiago;
+$contraseña=12345;
+
+name=$_POST['name'];
+password=$_POST['password'];
+
+echo $name.$password;
+echo "la edad ingresada es ".$name;
+
+
+ ?>
+
+
+
+?>
+</body>
+</html>
