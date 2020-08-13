@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+	<title>Formulario-HCI</title>
+	<link rel="stylesheet" type="text/css" href="Scss.css">
+
+</head> <img src= >
+<body bgcolor="#E0E0E0">
+<div  style="background-color:#000000;border-bottom:solid 1px #4B7AC0;"><img src="Media/Logo.jpg" height="104px" width="190px"></div>
+
+<h1 align="center">Crea tu cuenta \m/ </h1>
+<hr width =70%>
+<form class="contact_form" action="" method="post" name="contact_form">
+	
+<ul>
+    <li>
+         <h2>Datos Personales</h2>
+         <span class="required_notification">* Datos Requeridos</span>
+    </li>
+    <li>
+        <label for="name">Nombre:</label>
+        <input type="text" name="name" required placeholder=" Nombre" />
+        <input type="text" name="name"  placeholder="Segundo Nombre" />
+
+    </li>
+    <li>
+        <label for="Apellido">Apellido:</label>
+        <input type="text" name="Apellido" required placeholder="Apellido"/>
+        <input type="text " name="Apellido" placeholder="Segundo Apellido">
+    </li>
+    <li>
+        <label for="Id">Identificacion:</label>
+        <input type="text" name="Id" required="" />
+    </li>
+       <li> <label for="FechaNacimiento">Fecha De Nacimiento:</label>
+         <input  type="date" name="FechaNacimiento" required="" />
+       </li>
+     <li>
+     	<label for="Ciudad">Ciudad</label>
+     	<input type="text"/><br>
+     	<br>
+  		<label for="Direccion:"> Direccion</label>	
+  		<input list="Direccion" name="list" />
+        <datalist id="Direccion">
+        <option  value="casa">
+        <option  value="trabajo">
+        <option label="otro" value="otro">
+        </datalist>
+       <input type="text" placeholder="Cra18 #23-43"></input>
+
+      </li>
+
+
+    <li>
+    <label for="email">Email:</label>
+    <input type="text" name="email"  required="" />
+    <span class="form_hint">@unicomfacauca.edu.co</span>
+    </li>
+     <li>
+    <label for="password">contraseña:</label>
+    <input type="password" name="contraseña"  required="" />
+   
+    </li>
+    <li>
+    <label for="website">Sitio Web:</label>
+    <input type="text" name="website" />
+    <span class="form_hint">http://.unicomfacauca.edu.co</span>
+</li>
+<li>
+    <label for="message">Mensaje:</label>
+    <textarea name="message" cols="60" rows="6" placeholder="porque deseas ingresar a esta universidad"></textarea>
+
+</li>
+<br>
+<li>
+<button class="submit" onclick="myFunction()" location.href='Form.html'>Enviar</button>
+
+<script>
+function myFunction() {
+    confirm("Datos Fake");
+}
+</script>
+     <!--<button class="submit" type="submit">Enviar</button>-->
+</li>
+</ul>
+
+</form>
+</body>
+</html>
